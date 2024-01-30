@@ -5,26 +5,32 @@ public class Calculator {
 
     public void checkMethod() {
 
-    }
-
-    public int sum1to10(int first,int last) {
-
-        return(sum1to10(1,10));
+        System.out.println("메소드 호출 확인");
 
     }
 
+    public int sum1to10() {
 
-    public static void checkMaxNumber(int a, int b) {
-        System.out.println((a>b)? a:b);
+        int sum=0;
+        for (int i=1; i<=10; i++)
+            sum+=i;
+        return sum;
+    }
 
+
+    public void checkMaxNumber(int a, int b) {
+        int result=(a>b)? a:b;
+        System.out.println("두 수 중 제일큰수는 " + result + "이다.");
 
     }
 
     public int sumTwoNumber(int a, int b) {
+
         return(a+b);
     }
 
     public int minusTwoNumber(int a, int b) {
+
         return (a-b);
     }
 }
